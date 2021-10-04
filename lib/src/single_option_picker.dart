@@ -11,9 +11,16 @@ class SingleOptionPicker extends StatefulWidget {
     required this.optionBuilder,
   }) : super(key: key);
 
+  /// Number of options that will be shown.
   final int numberOfOptions;
+
+  /// Selected index of the option. This is needed so we can mark an option as selected.
   final int selectedOptionIndex;
+
+  /// Callback that is thriggered whenever and option is picked
   final Function(int) onChangeOption;
+
+  /// Builder that will build each option. This builder is executed once for each [numberOfOptions]
   final OptionBuilder optionBuilder;
 
   @override
