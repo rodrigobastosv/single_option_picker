@@ -6,7 +6,7 @@ class SingleOptionPicker extends StatefulWidget {
   const SingleOptionPicker({
     Key? key,
     required this.numberOfOptions,
-    required this.selectedOptionIndex,
+    this.selectedOptionIndex,
     required this.onChangeOption,
     required this.optionBuilder,
   }) : super(key: key);
@@ -14,8 +14,9 @@ class SingleOptionPicker extends StatefulWidget {
   /// Number of options that will be shown.
   final int numberOfOptions;
 
-  /// Selected index of the option. This is needed so we can mark an option as selected.
-  final int selectedOptionIndex;
+  /// Selected index of the option. This is needed so we can mark an option as selected. If [selectedOptionIndex]
+  /// is null, no option will be selected.
+  final int? selectedOptionIndex;
 
   /// Callback that is thriggered whenever and option is picked
   final Function(int) onChangeOption;
@@ -28,7 +29,7 @@ class SingleOptionPicker extends StatefulWidget {
 }
 
 class _SingleOptionPickerState extends State<SingleOptionPicker> {
-  late int selectedOptionIndex;
+  late int? selectedOptionIndex;
 
   @override
   void initState() {
