@@ -1,3 +1,5 @@
+<a href="https://www.buymeacoffee.com/rodrigobastosv" target="_blank"><img src="https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png" alt="Buy Me A Coffee" style="height: 60px !important;width: 217px !important;" ></a>
+
 #  Introduction
 
 Have you ever wanted a widget that facilitates the process of choosing an option among some available options? If yes, single_option_picker is the widget for you :)
